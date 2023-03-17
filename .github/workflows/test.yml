@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Create a file
         run: |
-		touch .env
-		echo "Hello World" > .env
+          touch .env
+          echo "Hello World" > .env
       - name: Read a File
-	run: |
-		ls -al
-		cat .env
+        run: |
+            ls -al
+            cat .env
