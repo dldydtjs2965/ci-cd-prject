@@ -9,11 +9,9 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Create a file
-        run: |
-          touch .env
-          echo "Hello World" > .env
-      - name: Read a File
-        run: |
-            ls -al
-            cat .env
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: ls
+        run: ls -la
+
