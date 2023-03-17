@@ -9,5 +9,11 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Hello World
-        run: echo "Hello World"
+      - name: Create a file
+        run: |
+	  touch .env
+	  echo "Hello World" > .env
+      - name: Read a File
+	run: |
+	  ls -al
+	  cat .env
